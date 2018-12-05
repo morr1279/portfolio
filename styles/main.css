@@ -584,22 +584,28 @@ section.intro {
 ==================== */
 section-work {
   padding: 3em 0 2em;
-  text-align: center; }
+  text-align: center;
+     }
   @media screen and (min-width: 53.75em) {
     .features .feature-item {
       float: left;
         text-align: center;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
+      display: inline-block;
+      margin-right: 1.55765%;
+      width: 32%;
+      background-color: #dbdca8;
+      padding-top: 2em;}
+      padding-right: 2em;
+      padding-bottom: 5em;
+      padding-left: 2em;
       .features .feature-item:last-child {
         margin-right: 0; }
       .features .feature-item:nth-child(3n) {
         margin-right: 0; }
-/*
-      .features .feature-item:nth-child(3n+1) {
-        clear: left; } 
-*/
+
+      /*.features .feature-item:nth-child(3n+1) {
+        clear: left; } */
+
 }
   @media screen and (max-width: 53.75em) {
     .features .feature-item {
@@ -649,7 +655,7 @@ section-work {
 /* ====================
 12. CONTACT SECTION
 ==================== */
-.contact .form {
+/*.contact .form {
   padding-bottom: 1em; }
   .contact .form:after {
     content: "";
@@ -705,7 +711,7 @@ section-work {
   margin: 0 20% 2em; }
   @media screen and (max-width: 37.5em) {
     .contact #contact-error {
-      margin: 0 5% 2em; } }
+      margin: 0 5% 2em; } }*/
 
 /* ====================
 13. FOOTER
@@ -742,27 +748,4 @@ footer.footer {
     float: right;
     text-align: right;
     margin: 2em auto; }*/
-    @media screen and (max-width: 37.5em) {
-      /*footer.footer ul.social {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        text-align: center;
-        padding: 0; }
-        footer.footer ul.social:last-child {
-          margin-right: 0; } }
-    footer.footer ul.social:last-child {
-      margin-right: 0; }*/
-    /*footer.footer ul.social li {
-      display: inline-block;
-      text-align: center;
-      list-style: none;
-      color: #cccccc;
-      transition: all 0.2s; }
-      footer.footer ul.social li a {
-        font-size: 1.3em;
-        padding: 0 0 0 1.2em;
-        color: #cccccc; }
-        footer.footer ul.social li a:hover {
-          color: #2ecc71; }*/
+    @media screen and (max-width: 37.5em)
