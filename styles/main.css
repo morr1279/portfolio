@@ -354,6 +354,11 @@ textarea {
 html, body, section.intro, .split, .split-text {
   height: 100%; }
 
+/*this is styling my work and resume sections*/
+section.features {
+    background-color: #dbdca8;
+}
+/*this is for all sections*/
 section {
   padding: 6em 0 3em;
   position: relative; }
