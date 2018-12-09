@@ -81,7 +81,7 @@ input[type="submit"] {
   color: white;
   display: inline-block;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 1;
   padding: .75em 1em;
   text-decoration: none; }
@@ -356,7 +356,9 @@ html, body, section.intro, .split, .split-text {
 
 /*this is styling my work and resume sections*/
 section.features {
-    background-color: #dbdca8;
+    /*background-color: #dbdca8*/
+    background-color: #d6d6c2; 
+    /*background-color:#ccccff;*/
 }
 /*this is for all sections*/
 section {
