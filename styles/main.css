@@ -261,10 +261,9 @@ blockquote {
   border-left: solid 3px #d9d9d9; }
 /* COLOR FOR EMAIL ADDRESS AND NAME */
 a {
-  /*color: #2ecc71;*/
     color: #00b300;}
   a:hover {
-    color: #29b765; }
+    color: blue; }
 
 input,
 textarea,
