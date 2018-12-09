@@ -5,12 +5,12 @@ NEAT - TABLE OF CONTENTS
 
 1. CSS RESET - MEYERWEB
 2. BOURBON BITTERS STYLES
-5. HEADER
-6. INTRO SECTION
-7. FEATURES SECTION
-7. RESUME-ITEM
-12. FOOTER
-13. USER CUSTOMISATION
+3. TEMPLATE GLOBAL STYLES
+4. HEADER
+5. INTRO SECTION
+6. WORK SECTION
+7. CONTACT SECTION
+8. FOOTER
 
 ===================== */
 /* ====================
@@ -238,7 +238,7 @@ dl {
     margin: 0; }
 
 /* ====================
-4. TEMPLATE GLOBAL STYLES 
+3. TEMPLATE GLOBAL STYLES 
 ==================== */
 /* typography */
 body {
@@ -328,24 +328,8 @@ section {
     opacity: 0.5;
     font-size: 1.25em; }
 
-/* buttons */
-/*a.button.alt,
-a.button.large.alt {
-  background: #f39c12; }
-  a.button.alt:hover,
-  a.button.large.alt:hover {
-    background: #f5ac39; }
-
-a.button.large {
-  background: #2ecc71;
-  text-transform: uppercase;
-  margin-top: 1em;
-  padding: 1em 2em; }
-  a.button.large:hover {
-    background: #4cd787; }*/
-
 /* ====================
- 5. HEADER 
+ 4. HEADER 
 ==================== */
   header.navigation.headroom .navigation-wrapper {
     max-width: 78em;
@@ -470,7 +454,7 @@ header.navigation ul.submenu {
           padding-bottom: 1.2em; } }
 
 /* ====================
-6. INTRO SECTION
+5. INTRO SECTION
 ==================== */
 section.intro {
   padding: 0;
@@ -516,7 +500,7 @@ section.intro {
         opacity: 1; }
 
 /* ====================
-7. WORK SECTION
+6. WORK SECTION
 ==================== */
 section-work {
   padding: 3em 0 2em;
@@ -528,9 +512,9 @@ section-work {
       float: left;
         text-align: center;
       display: inline-block;
-      margin-right: 1.55765%;
+      /*margin-right: 1.55765%;*/
       width: 32%;
-      background-color: #d6d6c2;
+      /*background-color: #d6d6c2;*/
       padding-top: 2em;}
       padding-right: 2em;
       padding-bottom: 5em;
@@ -542,21 +526,21 @@ section-work {
       .features .feature-item:nth-child(3n+1) {
         /*clear: left;*/
       /*width: 290px;
-      height: 250px;
-      border: 1px solid #c3c3c3;
-      display: -webkit-flex;
+      height: 250px;*/
+      /*border: 1px solid #c3c3c3;*/
+      /*display: -webkit-flex;
         display: flex;
       -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
       -webkit-align-content: center;
-      align-content: center; }*/
+      align-content: center;*/ }
 }
   @media screen and (max-width: 53.75em) {
     .features .feature-item {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
+      /*margin-right: 2.35765%;*/
+      width: 32%; }
       .features .feature-item:last-child {
         margin-right: 0; }
       .features .feature-item:nth-child(2n) {
@@ -564,12 +548,12 @@ section-work {
       .features .feature-item:nth-child(2n+1) {
         /*clear: left;*/ } 
 }
-  @media screen and (max-width: 30em) {
+  @media screen and (max-width: 53.75em) {
     .features .feature-item {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
+      /*margin-right: 2.35765%;*/
+      width: 32%; }
       .features .feature-item:last-child {
         margin-right: 0; }
       .features .feature-item:nth-child(1n) {
@@ -586,7 +570,8 @@ section-work {
     font-weight: bold; }
 /*Text color for work description*/
   .features .feature-item p {
-    color: #800000; }
+    color: #800000;
+    width: 21em; }
 /*Color for icons*/
   .features .feature-item i {
     font-size: 4em;
@@ -597,70 +582,12 @@ section-work {
   .features .feature-item:hover i {
     color: #ffa500; }
 
-
 /* ====================
-12. CONTACT SECTION
+7. CONTACT SECTION
 ==================== */
-/*.contact .form {
-  padding-bottom: 1em; }
-  .contact .form:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .contact .form .form-left,
-  .contact .form .form-right {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .contact .form .form-left:last-child,
-    .contact .form .form-right:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 53.75em) {
-      .contact .form .form-left,
-      .contact .form .form-right {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        padding: 0 5%; }
-        .contact .form .form-left:last-child,
-        .contact .form .form-right:last-child {
-          margin-right: 0; } }
-  .contact .form label {
-    display: none; }
-  .contact .form input {
-    height: 3em;
-    margin-bottom: 1em;
-    padding: 0 1em; }
-  .contact .form textarea {
-    padding: 1em;
-    height: 11em; }
-.contact p.submit {
-  text-align: center;
-  margin: 0 auto;
-  display: block; }
-  .contact p.submit input {
-    background: #2ecc71;
-    padding: 1.5em 6em;
-    text-transform: uppercase; }
-    .contact p.submit input:hover {
-      background: #40d47e; }
-.contact .form-feedback {
-  padding: 1em 2em;
-  color: white; }
-.contact .form-feedback.form-success {
-  background-color: #2ecc71; }
-.contact .form-feedback.form-error {
-  background-color: #e74c3c; }
-.contact #contact-error {
-  margin: 0 20% 2em; }
-  @media screen and (max-width: 37.5em) {
-    .contact #contact-error {
-      margin: 0 5% 2em; } }*/
 
 /* ====================
-13. FOOTER
+8. FOOTER
 ==================== */
 footer.footer {
   padding-top: 1em; }
@@ -672,7 +599,7 @@ footer.footer {
     margin-right: 2.35765%;
     width: 65.88078%;
     padding: 2em 0;
-    /* copyright color */
+    /* COPYRIGHT COLOR */
     color: #595959;
     margin-bottom: 0; }
     @media screen and (max-width: 37.5em) {
@@ -687,12 +614,5 @@ footer.footer {
           margin-right: 0; } }
     footer.footer p.copyright:last-child {
       margin-right: 0; }
-  /*footer.footer ul.social {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    float: right;
-    text-align: right;
-    margin: 2em auto; }*/
+
     @media screen and (max-width: 37.5em)
