@@ -121,7 +121,7 @@ h5 {
   font-size: 1.25em; }
 
 h6 {
-  font-size: 1em; }
+  font-size: 1em;}
 
 p {
   margin: 0 0 0.75em; }
@@ -182,35 +182,6 @@ label {
   label abbr {
     display: none; }
 
-textarea,
-input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
-select[multiple=multiple] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: border-color;
-  -moz-transition: border-color;
-  transition: border-color;
-  background-color: white;
-  border-radius: 0.1875em;
-  border: 1px solid #DDD;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 1em;
-  margin-bottom: 0.75em;
-  padding: 0.5em 0.5em;
-  width: 100%; }
-  textarea:hover,
-  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
-  select[multiple=multiple]:hover {
-    border-color: #c4c4c4; }
-  textarea:focus,
-  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
-  select[multiple=multiple]:focus {
-    border-color: #2ecc71;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(41, 183, 101, 0.7);
-    outline: none; }
-
 textarea {
   resize: vertical; }
 
@@ -245,7 +216,7 @@ th {
   border-bottom: 1px solid #b7b7b7;
   font-weight: bold;
   padding: 0.75em 0;
-  text-align: left; }
+  text-align: center; }
 
 td {
   border-bottom: 1px solid #DDD;
@@ -265,20 +236,6 @@ dl {
     margin-top: 0.75em; }
   dl dd {
     margin: 0; }
-
-a.button,
-button,
-input[type="submit"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  border: none;
-  cursor: pointer;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap; }
 
 /* ====================
 4. TEMPLATE GLOBAL STYLES 
@@ -313,33 +270,6 @@ textarea,
 button {
   font-family: 'Montserrat', sans-serif !important; }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  color: #999999;
-  border: solid 2px #ebebeb !important;
-  box-shadow: none !important; }
-  input[type="text"]::-webkit-input-placeholder,
-  input[type="email"]::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
-    color: #bfbfbf; }
-  input[type="text"]::-moz-placeholder,
-  input[type="email"]::-moz-placeholder,
-  textarea::-moz-placeholder {
-    color: #bfbfbf; }
-  input[type="text"]:-moz-placeholder,
-  input[type="email"]:-moz-placeholder,
-  textarea:-moz-placeholder {
-    color: #bfbfbf; }
-  input[type="text"]:-ms-input-placeholder,
-  input[type="email"]:-ms-input-placeholder,
-  textarea:-ms-input-placeholder {
-    color: #bfbfbf; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  textarea:focus {
-    border: solid 2px #cccccc !important; }
-
 /* layout */
 .container {
   max-width: 68em;
@@ -354,11 +284,9 @@ textarea {
 html, body, section.intro, .split, .split-text {
   height: 100%; }
 
-/*this is styling my work and resume sections*/
+/*this is styling MY WORK and RESUME sections*/
 section.features {
-    /*background-color: #dbdca8*/
     background-color: #d6d6c2; 
-    /*background-color:#ccccff;*/
 }
 /*this is for all sections*/
 section {
@@ -390,17 +318,18 @@ section {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 3em; }
+/* UNDERLINE OF WORK, RESUME, CONTACT*/
   .title hr {
     border: solid 2px rgba(0, 0, 0, 0.1);
     margin: 1em auto 1.5em; }
     .title hr.small {
-      width: 50px; }
+      width: 470px; }
   .title p {
     opacity: 0.5;
     font-size: 1.25em; }
 
 /* buttons */
-a.button.alt,
+/*a.button.alt,
 a.button.large.alt {
   background: #f39c12; }
   a.button.alt:hover,
@@ -413,7 +342,7 @@ a.button.large {
   margin-top: 1em;
   padding: 1em 2em; }
   a.button.large:hover {
-    background: #4cd787; }
+    background: #4cd787; }*/
 
 /* ====================
  5. HEADER 
@@ -593,6 +522,7 @@ section-work {
   padding: 3em 0 2em;
   text-align: center;
      }
+/* borders around image icons */
   @media screen and (min-width: 53.75em) {
     .features .feature-item {
       float: left;
@@ -600,7 +530,7 @@ section-work {
       display: inline-block;
       margin-right: 1.55765%;
       width: 32%;
-      background-color: #dbdca8;
+      background-color: #d6d6c2;
       padding-top: 2em;}
       padding-right: 2em;
       padding-bottom: 5em;
@@ -733,7 +663,8 @@ footer.footer {
     margin-right: 2.35765%;
     width: 65.88078%;
     padding: 2em 0;
-    color: #bfbfbf;
+    /* copyright color */
+    color: #595959;
     margin-bottom: 0; }
     @media screen and (max-width: 37.5em) {
       footer.footer p.copyright {
