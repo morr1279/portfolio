@@ -350,7 +350,8 @@ section {
         }
   header.navigation.headroom .nav {
       z-index: 9999999;
-    float: none; }
+    float: none;
+    /*overflow: scroll;*/ }
     @media screen and (min-width: 53.75em) {
       header.navigation.headroom .nav {
         float: right; } }
@@ -365,7 +366,9 @@ section {
     header.navigation.headroom ul li.nav-link.active a {
       color: #2ecc71; }
     header.navigation.headroom ul li.nav-link a {
-      display: inline-block;
+        /*overflow: scroll;*/
+        /*scroll-behavior: smooth;*/
+        display: inline-block;
       font-weight: bold;
       color: #ffa500; }
       @media screen and (min-width: 53.75em) {
@@ -457,7 +460,7 @@ header.navigation ul.submenu {
 5. INTRO SECTION
 ==================== */
 section.intro {
-  padding: 0;
+    padding: 0;
   color: white;
   text-transform: uppercase; }
   section.intro .image-bg {
@@ -497,7 +500,8 @@ section.intro {
       text-align: center;
       transition: opacity 0.2s; }
       section.intro a.jump-down i:hover {
-        opacity: 1; }
+        opacity: 1;
+     }
 
 /* ====================
 6. WORK SECTION
@@ -585,16 +589,24 @@ section-work {
 /* ====================
 7. CONTACT SECTION
 ==================== */
-@media screen and (min-width: 30em) {
+/*@media screen and (min-width: 45em) {
     section.contact .container {
       position: relative;
       top: 100%;} }
-.features .feature-item hr {
-    margin-left: auto;
-}
+    .features .feature-item p {
+        position: right;
+}*/
 .features .feature-item h5 {
     text-transform: capitalize;
-    position: relative; }
+    position: absolute; }
+#section-contact .feature-item p { 
+    color: #800000; }
+#section-contact .feature-item {
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
 /* ====================
 8. FOOTER
