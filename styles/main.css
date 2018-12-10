@@ -585,6 +585,16 @@ section-work {
 /* ====================
 7. CONTACT SECTION
 ==================== */
+@media screen and (min-width: 30em) {
+    section.contact .container {
+      position: relative;
+      top: 100%;} }
+.features .feature-item hr {
+    margin-left: auto;
+}
+.features .feature-item h5 {
+    text-transform: capitalize;
+    position: relative; }
 
 /* ====================
 8. FOOTER
