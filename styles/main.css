@@ -601,12 +601,11 @@ section-work {
     position: absolute; }
 #section-contact .feature-item p { 
     color: #800000; }
-#section-contact .feature-item {
-    width: 50%;
-    text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-}
+    #section-contact .feature-item {
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%; }
 
 /* ====================
 8. FOOTER
